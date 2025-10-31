@@ -15,7 +15,7 @@ spec:
         app: mlops-api
     spec:
       containers:
-      - name: 
+      - name: mlops-api
         image: gcr.io/natley30/mlops-api-sinerror:latest
         ports:
         - containerPort: 5000
