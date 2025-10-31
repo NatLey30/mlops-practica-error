@@ -28,7 +28,6 @@ if st.button('Obtener Predicción'):
     try:
         # Enviar la petición a la API
         response = requests.post(api_url, data=json.dumps(payload), headers={'Content-Type': 'application/json'})
-
         # Verificar si la petición fue exitosa
         if response.status_code == 200:
             prediction_result = response.json().get('prediction')
